@@ -6,27 +6,36 @@ if (isset($_POST['save'])) {
    
          $fp = fopen('arrendatarios.xml', 'w+');
          $newXml = '<?xml version=\'1.0\' encoding=\'utf-8\' ?>'."\n"."<?xml-stylesheet type='text/xsl' href='test.xsl'?>"."\n";   
-		 $newXml .= '<estudiantes>'."\n";
+		 $newXml .= '<arrendatarios>'."\n";
          $newXml .= '<persona>'."\n";
          $newXml .= '<nombre>'.$_POST['nombre'].'</nombre>'."\n";
          $newXml .= '<apellido>'.$_POST['apellido'].'</apellido>'."\n";
-         $newXml .= '<carrera>'.$_POST['carrera'].'</carrera>'."\n";
+         $newXml .= '<rut>'.$_POST['rut'].'</rut>'."\n";
+         $newXml .= '<meses>'.$_POST['meses'].'</meses>'."\n";
+         $newXml .= '<monto>'.$_POST['monto'].'</monto>'."\n";
+         $newXml .= '<direccion>'.$_POST['direccion'].'</direccion>'."\n";
          $newXml .= '</persona>'."\n";
-		 $newXml .= '</estudiantes>'."\n";
+		 $newXml .= '</arrendatarios>'."\n";
          fwrite($fp, $newXml);
          fclose($fp);    
-    echo "Archivo XML creado";
+    echo "File has been altered";
 }
 if (isset($_POST['load'])) {
 	
-$arrendatarios=simplexml_load_file("test.xml");
+$arrendatarios=simplexml_load_file("arrendatarios.xml");
 foreach($arrendatarios as $persona)
 {
 echo "Nombre: " . $persona->nombre;
 echo "<br>";
 echo "Apellido: " . $persona ->apellido;
 echo "<br>";
-echo "Carrera : " . $persona ->carrera;
+echo "Rut : " . $persona ->rut;
+echo "<br>";
+echo "Meses : " . $persona ->meses;
+echo "<br>";
+echo "Monto : " . $persona ->monto;
+echo "<br>";
+echo "Direccion : " . $persona ->direccion;
 echo "<br>";
 }
 }

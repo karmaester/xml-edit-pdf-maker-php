@@ -1,8 +1,9 @@
 <?php 
-echo "DATOS DE LOS ESTUDIANTES <br>";   
-echo "El Nombre es:".$_POST['nombre']."<br>";
-echo "El apellido es : ".$_POST['apellido']."<br>";
-echo "La carrera es: ".$_POST['carrera']."<br>";
- 
-       
+echo "DATOS DE ARRENDATARIOS<br>";   
+echo "Nombre:".$_POST['nombre']."<br>";
+echo "Apellido: ".$_POST['apellido']."<br>";
+echo "Rut: ".$_POST['rut']."<br>";
+echo "Meses:".$_POST['meses']."<br>";
+echo "Monto adeudado: ".$_POST['monto']."<br>";
+echo "Dirección: ".$_POST['direccion']."<br>";
 ?> 

@@ -1,9 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <?xml-stylesheet type='text/xsl' href='test.xsl'?>
-<estudiantes>
+<arrendatarios>
 <persona>
-<nombre>Khristian</nombre>
-<apellido>Rojas</apellido>
-<carrera>Medicina</carrera>
+<nombre>Nelly</nombre>
+<apellido>Margarita</apellido>
+<rut>409002773</rut>
+<meses>2</meses>
+<monto>50</monto>
+<direccion>Av Ferrero Tamayo Friuli A 104</direccion>
 </persona>
-</estudiantes>
+</arrendatarios>

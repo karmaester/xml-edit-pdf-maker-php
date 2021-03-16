@@ -14,8 +14,14 @@
     <input type="text" name="nombre"><br>
     <label for="apellido"> Apellido : <br></label>
     <input type="text" name="apellido"><br>
-    <label for="carrera"> Carrera : <br></label>
-    <input type="text" name="carrera"><br>
+    <label for="rut"> Rut : <br></label>
+    <input type="text" name="rut"><br>
+    <label for="meses"> Meses : <br></label>
+    <input type="text" name="meses"><br>
+    <label for="monto"> Monto : <br></label>
+    <input type="text" name="monto"><br>
+    <label for="direccion"> Dirección : <br></label>
+    <input type="text" name="direccion"><br>
 
     <input type="submit" name="save" value="Guardar" />
     <input type="submit" name="load" value="Leer"/>
