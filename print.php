@@ -25,17 +25,17 @@ if (isset($_POST['load'])) {
 $arrendatarios=simplexml_load_file("arrendatarios.xml");
 foreach($arrendatarios as $persona)
 {
-echo "Nombre: " . $persona->nombre;
+echo "<h1 align='center'>Nombre: " . $persona->nombre . "</h1>";
 echo "<br>";
-echo "Apellido: " . $persona ->apellido;
+echo "<h3>Apellido: " . $persona ->apellido . "</h3>";
 echo "<br>";
-echo "Rut : " . $persona ->rut;
+echo "<h3>Rut : " . $persona ->rut . "</h3>";
 echo "<br>";
-echo "Meses : " . $persona ->meses;
+echo "<h3>Meses : " . $persona ->meses . "</h3>";
 echo "<br>";
-echo "Monto : " . $persona ->monto;
+echo "<h3>Monto : " . $persona ->monto . "</h3>";
 echo "<br>";
-echo "Direccion : " . $persona ->direccion;
+echo "<h3>Direccion : " . $persona ->direccion . "</h3>";
 echo "<br>";
 }
 }

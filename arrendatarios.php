@@ -1,9 +1,9 @@
 <?php 
-echo "DATOS DE ARRENDATARIOS<br>";   
-echo "Nombre:".$_POST['nombre']."<br>";
-echo "Apellido: ".$_POST['apellido']."<br>";
-echo "Rut: ".$_POST['rut']."<br>";
-echo "Meses:".$_POST['meses']."<br>";
-echo "Monto adeudado: ".$_POST['monto']."<br>";
-echo "Dirección: ".$_POST['direccion']."<br>";
+echo "<h1 align='center'>DATOS DE ARRENDATARIOS</h1><br>";   
+echo "<h3>Nombre:".$_POST['nombre']."</h3><br>";
+echo "<h3>Apellido: ".$_POST['apellido']."</h3><br>";
+echo "<h3>Rut: ".$_POST['rut']."</h3><br>";
+echo "<h3>Meses:".$_POST['meses']."</h3><br>";
+echo "<h3>Monto adeudado: ".$_POST['monto']."</h3><br>";
+echo "<h3>Dirección: ".$_POST['direccion']."</h3><br>";
 ?> 

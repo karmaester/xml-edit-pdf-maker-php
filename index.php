@@ -8,24 +8,28 @@
     <title>Vive feliz</title>
 </head>
 <body>
-  <form action="print.php" method="POST" enctype="multipart/form-data">
-    <h1>DATOS DEL ESTUDIANTE</h1><br>
-    <label for="nombre"> Nombre : <br></label>
-    <input type="text" name="nombre"><br>
-    <label for="apellido"> Apellido : <br></label>
-    <input type="text" name="apellido"><br>
-    <label for="rut"> Rut : <br></label>
-    <input type="text" name="rut"><br>
-    <label for="meses"> Meses : <br></label>
-    <input type="text" name="meses"><br>
-    <label for="monto"> Monto : <br></label>
-    <input type="text" name="monto"><br>
-    <label for="direccion"> Dirección : <br></label>
-    <input type="text" name="direccion"><br>
+  <div class="container">
+    <form action="print.php" method="POST" enctype="multipart/form-data">
+      <h1 class="text-center text-success">NUEVO ARRENDATARIO</h1><br>
+      <label class="form-label" for="nombre"> Nombre : <br></label>
+      <input class="form-control" type="text" name="nombre"><br>
+      <label class="form-label" for="apellido"> Apellido : <br></label>
+      <input class="form-control" type="text" name="apellido"><br>
+      <label class="form-label" for="rut"> Rut : <br></label>
+      <input class="form-control" type="text" name="rut"><br>
+      <label class="form-label" for="meses"> Meses : <br></label>
+      <input class="form-control" type="text" name="meses"><br>
+      <label class="form-label" for="monto"> Monto : <br></label>
+      <input class="form-control" type="text" name="monto"><br>
+      <label class="form-label" for="direccion"> Dirección : <br></label>
+      <input class="form-control" type="text" name="direccion"><br>
 
-    <input type="submit" name="save" value="Guardar" />
-    <input type="submit" name="load" value="Leer"/>
-    <input type="submit" value="Crear PDF" name="crear"><br>
-  </form>
+      <div class="d-flex justify-content-around">
+      <input class="btn btn-success" type="submit" name="save" value="Guardar" />
+      <input class="btn btn-warning" type="submit" name="load" value="Leer"/>
+      <input class="btn btn-primary" type="submit" value="Crear PDF" name="crear">
+      </div>
+    </form>
+  </div>
 </body>
 </html>

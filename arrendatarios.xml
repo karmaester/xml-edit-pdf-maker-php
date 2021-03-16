@@ -2,11 +2,11 @@
 <?xml-stylesheet type='text/xsl' href='test.xsl'?>
 <arrendatarios>
 <persona>
-<nombre>Nelly</nombre>
-<apellido>Margarita</apellido>
-<rut>409002773</rut>
+<nombre>Khristian</nombre>
+<apellido>Rojas</apellido>
+<rut>26.341.826-3</rut>
 <meses>2</meses>
 <monto>50</monto>
-<direccion>Av Ferrero Tamayo Friuli A 104</direccion>
+<direccion>Antamo</direccion>
 </persona>
 </arrendatarios>
